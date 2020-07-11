@@ -74,8 +74,6 @@ mod tests {
             let result = factorial(case.input);
             assert_eq!(result, case.expected);
         }
-
-        assert_eq!(2 + 2, 4);
     }
 
     #[test]
@@ -88,6 +86,7 @@ mod tests {
             TestCase::new(5, 120),
             TestCase::new(3, 6),
             TestCase::new(7, 5040),
+            TestCase::new(5, 120),
         ];
 
         for case in cases {
